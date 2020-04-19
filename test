@@ -1,5 +1,5 @@
 ##############################################################################################
-Task1--->To create own docker image and run a container which displays time
+QUESTION1--->To create own docker image and run a container which displays time
 
 ##solution-->
 Command-->
@@ -22,4 +22,21 @@ O2-->18:12:10
 docker logs -f dipeshc1q1 > question1.txt
 
 #################################################################################################
+QUESTION2--->Build an image and retag it to push it to docker hub--->
+
+##Solution-->
+
+##used git link to clone a directory as webcode-->
+mkdir webcode
+cd webcode
+
+##edit dockerfile and build image--->
+vim Dockerfile
+docker build -t adhoc:dipesh .
+
+## tag image and push to docker hub--->
+docker tag adhoc:dipesh dip9798/adhoc:dipesh
+docker push dip9798/adhoc:dipesh
+
+####################################################################################################
 
