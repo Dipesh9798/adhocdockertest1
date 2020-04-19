@@ -39,4 +39,11 @@ docker tag adhoc:dipesh dip9798/adhoc:dipesh
 docker push dip9798/adhoc:dipesh
 
 ####################################################################################################
+Question3-->Deploy web application
+
+##solution-->
+pulling image:
+docker pull dockerashu/ckad:v2
+building container:
+docker run --name dipeshc3q3 -p 5456:80 -d dockerashu/ckad:v2 
 
